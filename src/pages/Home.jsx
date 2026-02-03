@@ -1,12 +1,12 @@
 import React from 'react'
-import Nav_Bar from '../components/Nav_Bar'
+import NavBar from '../components/NavBar'
 import homestyle from '../styling/home.module.css'
 
 const Home = () => {
   return (
     <>
       <div className={homestyle.main}>
-        <Nav_Bar/>
+        <NavBar/>
       </div>
     </>
   )

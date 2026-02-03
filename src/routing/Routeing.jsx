@@ -1,20 +1,20 @@
-import { Route, Routes } from 'react-router'
-import Home from '../Pages/Home'
-import Page_Not_Found from '../pages/Page_Not_Found'
-import Cart from '../pages/Cart'
-import Product_Details from '../pages/Product_Details'
-import All_Products from '../pages/All_Products'
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/Home";
+import Cart from "../pages/Cart";
+import ProductDetails from "../pages/ProductDetails";
+import AllProducts from "../pages/AllProducts";
 
-const Routeing = () => {
-  return (
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/cart" element={<Cart/>}/>
-        <Route path="/productdetails" element={<Product_Details/>}/>
-        <Route path="/allproducts" element={<All_Products/>}/>
-        <Route path="/*" element={<Page_Not_Found/>}/>
-      </Routes>
-  )
+const Routings = () => {
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/cart" element={<Cart/>}/>
+                <Route path="/products/:id" element={<ProductDetails/>}/>
+                <Route path="/allproducts" element={<AllProducts/>}/>
+                <Route path="*" element={<h1>Page Not Found</h1>}/>
+            </Routes>
+        </>
+    )
 }
-
-export default Routeing
+export default Routings
