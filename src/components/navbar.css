@@ -1,0 +1,422 @@
+nav {
+    position: sticky;
+    /* or fixed */
+    top: 0;
+    z-index: 1000;
+    /* MUST be higher than slider */
+}
+
+
+.navcontainer {
+    background-color: black;
+}
+
+.navcontainer .leftComp a {
+    text-decoration: none;
+    color: #A5ABBE;
+}
+
+.navcontainer .rightComp a,
+.iconWrapper {
+    color: #A5ABBE;
+}
+
+.navcontainer .iconWrapper .login-signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    gap: 6px;
+
+}
+
+.login-signup p:hover {
+    color: red;
+
+}
+
+/* //cartIcon// */
+.navcontainer .rightComp .iconWrapper .cartIcon {
+    width: 23px;
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    top: -8px;
+}
+
+
+.login-signup,
+span,
+.loginbox,
+.loginInfo p {
+    background-color: #222222;
+}
+
+.loginbox {
+    width: 180px;
+    height: auto;
+}
+
+.login-signup span {
+    position: relative;
+    top: -5px;
+}
+
+.navcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navcontainer .rightComp {
+    display: flex;
+    gap: 40px;
+    background-color: black;
+}
+
+.rightComp .icon {
+    margin: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: black;
+
+}
+
+
+.icon:hover {
+    color: #ED1D24;
+}
+
+.leftComp h1:hover {
+    color: #ED1D24;
+    cursor: pointer;
+}
+
+.leftComp {
+    background-color: black;
+
+}
+
+.leftComp h1 {
+    margin: 10px 20px;
+    background-color: black;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    margin: 0px 40px;
+    z-index: 5;
+}
+
+.iconWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.rightComp .loginInfo {
+    position: absolute;
+    top: 35px;
+    left: -200px;
+    background-color: #222222;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+.rightComp .info {
+    position: absolute;
+    top: 35px;
+    left: -80px;
+    background-color: #222222;
+    border: 2px solid white;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+}
+
+/* ========================= */
+/* Medium Devices (Tablets) */
+/* ========================= */
+@media (max-width: 992px) {
+    .navcontainer {
+        margin: 0 15px;
+    }
+
+    .navcontainer .rightComp {
+        gap: 25px;
+    }
+
+    .iconWrapper {
+        margin: 0 15px;
+    }
+
+    .rightComp .icon {
+        font-size: 20px;
+    }
+
+    .rightComp .info {
+        top: 32px;
+        left: -30px;
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+
+    .leftComp h1 {
+        font-size: 22px;
+        margin: 10px;
+    }
+}
+
+/* .authOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.authPopup {
+    background: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.authPopup input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 8px;
+    cursor: pointer;
+} */
+/* Overlay */
+.authOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Popup */
+.authPopup.dark {
+    background: #111;
+    width: 380px;
+    padding: 30px;
+    border-radius: 6px;
+    color: white;
+    position: relative;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);
+}
+
+/* Close */
+.closeIcon {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #aaa;
+}
+
+/* Text */
+.authPopup h2 {
+    margin-bottom: 10px;
+}
+
+.subText {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.subText span {
+    color: red;
+    cursor: pointer;
+}
+
+/* Inputs */
+.authPopup input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #444;
+    padding: 12px;
+    margin: 12px 0;
+    color: white;
+    font-size: 15px;
+}
+
+/* Login button */
+.loginBtn {
+    width: 100%;
+    background: red;
+    color: white;
+    padding: 12px;
+    border: none;
+    font-size: 16px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Divider */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #333;
+}
+
+.divider span {
+    margin: 0 10px;
+}
+
+/* Social buttons */
+.socialBtns {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.socialBtns button {
+    flex: 1;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.fb {
+    background: #3b5998;
+}
+
+.google {
+    background: #db4437;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+
+
+/* ========================= */
+/* Small Devices (Mobiles)  */
+/* ========================= */
+@media (max-width: 576px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    .navcontainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .leftComp h1 {
+        font-size: 20px;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .navcontainer .rightComp {
+        gap: 20px;
+    }
+
+    .iconWrapper {
+        margin: 0;
+    }
+
+    .rightComp .icon {
+        font-size: 18px;
+    }
+
+    .rightComp .info {
+        top: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 13px;
+        padding: 4px 10px;
+        white-space: nowrap;
+    }
+}
+
+.searchOverlay {
+    position: fixed;
+    top: -93px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.searchPopup {
+    background-color: #111;
+    /* solid black */
+    padding: 30px 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    color: #ccc;
+    /* light gray text */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input styling */
+.searchPopup input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #222;
+    color: #eee;
+}
+
+/* Search results */
+.searchResults {
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #222;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.searchResults p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.searchResults p:hover {
+    background-color: #333;
+}

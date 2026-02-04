@@ -1,15 +1,19 @@
-import React from 'react'
-import NavBar from '../components/NavBar'
-import homestyle from '../styling/home.module.css'
+import React from "react";
+import HeroSliders from "../Components/HeroSliders";
+import FeaturedProducts from "../Components/FeaturedProducts";
+import TopProducts from "../Components/TopProducts";
+import Footer from "../Components/Footer";
+import Advantages from "../Components/Advantages";
 
 const Home = () => {
-  return (
-    <>
-      <div className={homestyle.main}>
-        <NavBar/>
-      </div>
-    </>
-  )
+    return (
+        <>
+            <HeroSliders/>
+            <FeaturedProducts />
+            <TopProducts />
+            <Advantages/>
+            <Footer/>
+        </>
+    )
 }
-
 export default Home
