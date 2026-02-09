@@ -1,4 +1,17 @@
+.CartContainer {
+    background-color: #141414;
+    display: flex;
+}
 
+.CartContainer .leftCart {
+    background-color: #161819;
+    width: 50%;
+    height: 90vh;
+    margin-left: 10px;
+    padding: 30px;
+    overflow-y: scroll;
+
+}
 
 .leftCart .showEmpty {
     font-size: 90px;
@@ -66,7 +79,10 @@
     background-color: #161616;
 }
 
+.leftCart .cartCards .price {
+    display: flex;
 
+}
 
 .price .new {
     color: white;
@@ -127,7 +143,11 @@
 }
 
 /* Delivery text */
-
+.delivery {
+    color: #047603;
+    font-weight: 500;
+    background-color: #0F0F0F;
+}
 
 /* Divider line */
 .rightCart hr {
@@ -163,6 +183,18 @@
 
 .rightCart button:hover {
     background: #c50500;
+}
+
+.rightCart .original {
+    background-color: #0F0F0F;
+}
+
+.rightCart .totalPrice {
+    font-size: 30px;
+}
+
+.totalPrice span {
+    background-color: #0F0F0F;
 }
 
 
