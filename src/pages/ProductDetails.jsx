@@ -261,7 +261,8 @@ const ProductDetails = () => {
 
             </div>
 
-
+            <Advantages />
+            <Footer />
         </>
     );
 };
