@@ -5,9 +5,6 @@
     padding: 15px;
 }
 
-/* .DetailesContainer{
-    background-color: #141414;
-} */
 
 .DetailedBox .DetailLeft img {
     width: 150px;
@@ -370,7 +367,6 @@ h3 {
 
 @media (max-width: 992px) {
 
-    /* Main product layout */
     .DetailedBox {
         flex-direction: column;
         align-items: center;
@@ -378,7 +374,6 @@ h3 {
         margin-bottom: 80px;
     }
 
-    /* Left thumbnails */
     .DetailLeft {
         flex-direction: row;
         gap: 20px;
@@ -390,12 +385,10 @@ h3 {
         height: 100px;
     }
 
-    /* Main product image */
     .DetailMiddle img {
         width: 80%;
     }
 
-    /* Right text section */
     .DetailRight {
         width: 100%;
         text-align: center;
@@ -418,12 +411,10 @@ h3 {
         gap: 10px;
     }
 
-    /* Specifications */
     .SpecificationSection .specBox {
         gap: 60px;
     }
 
-    /* Related products */
     .realtedProducts {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }

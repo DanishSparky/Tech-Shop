@@ -1,9 +1,7 @@
 nav {
     position: sticky;
-    /* or fixed */
     top: 0;
     z-index: 1000;
-    /* MUST be higher than slider */
 }
 
 
@@ -35,7 +33,6 @@ nav {
 
 }
 
-/* //cartIcon// */
 .navcontainer .rightComp .iconWrapper .cartIcon {
     width: 23px;
     background-color: red;
@@ -144,9 +141,6 @@ span,
     padding: 5px 15px;
 }
 
-/* ========================= */
-/* Medium Devices (Tablets) */
-/* ========================= */
 @media (max-width: 992px) {
     .navcontainer {
         margin: 0 15px;
@@ -177,31 +171,6 @@ span,
     }
 }
 
-/* .authOverlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
-
-.authPopup {
-    background: white;
-    padding: 25px;
-    width: 320px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.authPopup input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 8px;
-    cursor: pointer;
-} */
-/* Overlay */
 .authOverlay {
     position: fixed;
     inset: 0;
@@ -249,7 +218,6 @@ span,
     cursor: pointer;
 }
 
-/* Inputs */
 .authPopup input {
     width: 100%;
     background: transparent;
@@ -260,7 +228,6 @@ span,
     font-size: 15px;
 }
 
-/* Login button */
 .loginBtn {
     width: 100%;
     background: red;
@@ -272,7 +239,6 @@ span,
     cursor: pointer;
 }
 
-/* Divider */
 .divider {
     display: flex;
     align-items: center;
@@ -293,7 +259,6 @@ span,
     margin: 0 10px;
 }
 
-/* Social buttons */
 .socialBtns {
     display: flex;
     justify-content: space-between;
@@ -320,11 +285,6 @@ span,
     background: #1da1f2;
 }
 
-
-
-/* ========================= */
-/* Small Devices (Mobiles)  */
-/* ========================= */
 @media (max-width: 576px) {
     nav {
         padding: 10px 0;
@@ -378,20 +338,17 @@ span,
 
 .searchPopup {
     background-color: #111;
-    /* solid black */
     padding: 30px 40px;
     border-radius: 10px;
     width: 90%;
     max-width: 500px;
     color: #ccc;
-    /* light gray text */
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Input styling */
 .searchPopup input {
     width: 100%;
     padding: 12px 15px;
@@ -403,7 +360,6 @@ span,
     color: #eee;
 }
 
-/* Search results */
 .searchResults {
     max-height: 200px;
     overflow-y: auto;
