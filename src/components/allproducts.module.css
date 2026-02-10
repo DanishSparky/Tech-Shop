@@ -1,0 +1,369 @@
+.Tcards hr {
+    border: none;
+    height: 1px;
+    background: gainsboro;
+}
+
+.Allcards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-x: hidden;
+    gap: 20px;
+    background-color: #131313;
+
+}
+
+.leftAllProd {
+    background-color: #202021;
+    padding-left: 20px;
+}
+
+.Tcards {
+    width: 100%;
+    border: 2px solid rgb(98, 94, 94);
+    border-radius: 2px;
+}
+
+.Tcards .Tcont {
+    margin: 30px;
+}
+
+.Tcont .Rating {
+    margin: 20px 10px;
+}
+
+.Tcont button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 15px;
+    font-size: larger;
+    background-color: red;
+}
+
+.Tcont h1 {
+    color: rgb(186, 182, 182);
+}
+
+.Tcont h3 {
+    color: rgb(101, 98, 98);
+}
+
+.Tcards img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    background-color: #161819;
+    object-position: center;
+}
+
+.Tcards .price {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+}
+
+.price .new {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(172, 167, 167)
+}
+
+.price .old {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Tcards hr {
+    border: none;
+    height: 1px;
+    background: gainsboro;
+}
+
+.Allcards {
+    background-color: #161819;
+    /* padding: 170px 0 95px; */
+    /* instead of margins */
+}
+
+.Allcards .btn-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 70px;
+
+}
+
+.allProductsSection {
+    display: flex;
+    gap: 25px;
+    background-color: #161819;
+}
+
+.leftAllProd {
+    overflow-y: scroll;
+    height: 500px;
+    width: 530px;
+}
+
+.filterBox {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.filterBox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.filterBox::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.filterBox::-webkit-scrollbar-thumb {
+    background-color: rgba(13, 13, 13, 0.35);
+    border-radius: 10px;
+}
+
+.filterBox::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(200, 200, 200, 0.6);
+}
+
+.filterBox {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(180, 180, 180, 0.35) transparent;
+}
+
+.sortby h3 {
+    color: rgb(201, 198, 198);
+
+}
+
+.sortby h5 {
+    color: rgb(121, 116, 116);
+}
+
+.filterTitle {
+    color: rgb(201, 198, 198);
+}
+
+.section h3 {
+    color: rgb(121, 116, 116);
+}
+
+.section .option {
+    background-color: #202021;
+    color: rgb(121, 116, 116);
+}
+
+.price {
+    color: rgb(121, 116, 116);
+}
+
+.leftAllProd .sortcards {
+    padding: 7px;
+}
+
+.allProductsSection .line {
+    width: 100%;
+    height: 1px;
+    background-color: #959597;
+    border: none;
+    margin: 0px;
+}
+
+.sortby {
+    margin-bottom: 20px;
+}
+
+.sortby h3 {
+    margin-bottom: 0px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sortcards {
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sortcards:hover {
+    background-color: #f2f2f2;
+}
+
+.activeSort {
+    background-color: #dc3545;
+    color: #fff;
+    font-weight: 600;
+}
+
+.activeSort h5 {
+    color: #fff;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.option:hover {
+    background-color: #f2f2f2;
+}
+
+.option input {
+    cursor: pointer;
+}
+
+.activeFilter {
+    background-color: #ffe5e5;
+    font-weight: 600;
+}
+
+.clearFiltersBtn {
+    width: 100%;
+    background-color: #e60000;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+.clearFiltersBtn:hover {
+    background-color: #c40000;
+}
+
+
+@media (max-width: 600px) {
+
+    .allProductsSection {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .leftAllProd {
+        width: 100%;
+        height: auto;
+        overflow-y: visible;
+        padding: 10px;
+    }
+
+    .clearFiltersBtn {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .sortby,
+    .filterby {
+        margin-bottom: 15px;
+    }
+
+    .filterBox {
+        max-height: none;
+        overflow-y: visible;
+    }
+
+    .priceBox {
+        padding: 10px 0;
+    }
+
+    .rightAllProd {
+        width: 100%;
+    }
+
+    .Allcards {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .Tcards img {
+        height: 180px;
+    }
+
+    .Tcont {
+        margin: 15px;
+    }
+
+    .Tcont h1 {
+        font-size: 18px;
+    }
+
+    .Tcont h3 {
+        font-size: 14px;
+    }
+
+    .price .new {
+        font-size: 22px;
+    }
+
+    .price .old {
+        font-size: 16px;
+    }
+
+    .Tcont button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    .allProductsSection {
+        gap: 20px;
+    }
+
+    .leftAllProd {
+        width: 320px;
+        height: auto;
+        overflow-y: auto;
+        padding-left: 15px;
+    }
+
+    .rightAllProd {
+        width: calc(100% - 320px);
+    }
+
+    .Allcards {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .Tcards img {
+        height: 200px;
+    }
+
+    .Tcont h1 {
+        font-size: 20px;
+    }
+
+    .Tcont h3 {
+        font-size: 15px;
+    }
+
+    .price .new {
+        font-size: 26px;
+    }
+
+    .price .old {
+        font-size: 18px;
+    }
+
+    .Tcont button {
+        font-size: 16px;
+        padding: 14px;
+    }
+}
