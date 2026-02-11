@@ -38,6 +38,7 @@
     width: 120px;
 }
 
+/* Wrapper for + 1 - */
 .AddRemovebtn {
     display: flex;
     align-items: center;
@@ -49,6 +50,7 @@
     margin: 30px 0px;
 }
 
+/* + and - buttons */
 .Addbtn,
 .Removebtn {
     background: transparent;
@@ -67,6 +69,7 @@
     color: #ffffff;
 }
 
+/* Quantity number */
 .AddRemovebtn span {
     width: 40px;
     text-align: center;
@@ -114,6 +117,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
+/* Order Summary title */
 .rightCart h1:first-child {
     font-size: 20px;
     font-weight: 600;
@@ -121,6 +125,7 @@
     color: #e5e7eb;
 }
 
+/* Price rows */
 .rightCart p {
     display: flex;
     justify-content: space-between;
@@ -129,18 +134,22 @@
     color: #cbd5e1;
 }
 
+/* Discount text */
 .discount {
     background-color: #0F0F0F;
     color: #047603;
+    /* green */
     font-weight: 500;
 }
 
+/* Delivery text */
 .delivery {
     color: #047603;
     font-weight: 500;
     background-color: #0F0F0F;
 }
 
+/* Divider line */
 .rightCart hr {
     border: none;
     height: 1px;
@@ -148,6 +157,7 @@
     margin: 20px 0;
 }
 
+/* Total Price */
 .rightCart h1:last-of-type {
     display: flex;
     justify-content: space-between;
@@ -157,6 +167,7 @@
     color: #ffffff;
 }
 
+/* Checkout button */
 .rightCart button {
     width: 100%;
     padding: 12px 0;
@@ -287,6 +298,7 @@
     }
 }
 
+/* EMPTY CART UI */
 .emptyCart {
     height: 100%;
     min-height: 80vh;
@@ -298,18 +310,21 @@
     border-radius: 10px;
 }
 
+/* Cart icon */
 .cartIcon {
     font-size: 90px;
     color: red;
     margin-bottom: 20px;
 }
 
+/* Empty text */
 .emptyCart h2 {
     color: #cbd5e1;
     font-size: 20px;
     margin-bottom: 20px;
 }
 
+/* Start shopping button */
 .shopBtn {
     background: #e10600;
     color: white;

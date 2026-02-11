@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Cart from "../pages/Cart";
@@ -12,7 +13,6 @@ const Routings = () => {
                 <Route path="/cart" element={<Cart/>}/>
                 <Route path="/products/:id" element={<ProductDetails/>}/>
                 <Route path="/allproducts" element={<AllProducts/>}/>
-                <Route path="*" element={<h1>Page Not Found</h1>}/>
             </Routes>
         </>
     )

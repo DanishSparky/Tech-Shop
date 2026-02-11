@@ -5,6 +5,8 @@ import { useSelector } from "react-redux";
 import productsData from "../assets/data/productsData";
 import "./navbar.css";
 
+
+
 const NavBar = () => {
     const [searchshow, setSearchShow] = useState(false)
     const [cartshow, setCartShow] = useState(false)
@@ -13,7 +15,10 @@ const NavBar = () => {
     const [searchText, setSearchText] = useState("");
     const searchRef = useRef(null);
     const navigate = useNavigate();
+
+
     const [authType, setAuthType] = useState(null);
+
 
     const hoverHandler = (param) => {
         if (authType) return;
@@ -40,6 +45,9 @@ const NavBar = () => {
     const filteredProducts = productsData.filter(prod =>
         prod.title.toLowerCase().includes(searchText.toLowerCase())
     );
+
+
+
 
     useEffect(() => {
         const handleClickOutside = (e) => {
@@ -83,6 +91,7 @@ const NavBar = () => {
                                             onChange={(e) => setSearchText(e.target.value)}
                                             autoFocus
                                         />
+
                                         {searchText && (
                                             <div className="searchResults">
                                                 {filteredProducts.length ? (
@@ -106,7 +115,9 @@ const NavBar = () => {
                                     </div>
                                 </div>
                             )}
+
                         </div>
+
 
                         <div className="iconWrapper" onMouseEnter={() => hoverHandler("cart")} onMouseLeave={() => leaveHandler("cart")}>
                             <Link to="/cart"><FaShoppingCart className="icon" /></Link>
@@ -123,6 +134,8 @@ const NavBar = () => {
                                         <p className="Login" onClick={() => setAuthType("login")}>Login</p>
                                         <span>/</span>
                                         <p className="signup" onClick={() => setAuthType("signup")}>Signup</p>
+
+
                                     </div>
                                     <hr></hr>
                                     <p>Please Login</p>
@@ -162,6 +175,7 @@ const NavBar = () => {
                     </div>
                 )}
 
+
                 {authType === "signup" && (
                     <div className="authOverlay" onClick={() => setAuthType(null)}>
                         <div className="authPopup dark" onClick={(e) => e.stopPropagation()}>
@@ -184,10 +198,15 @@ const NavBar = () => {
                             <div className="divider">
                                 <span>or login with</span>
                             </div>
+
+
                         </div>
                     </div>
                 )}
+
+
             </nav>
+
         </>
     )
 }
