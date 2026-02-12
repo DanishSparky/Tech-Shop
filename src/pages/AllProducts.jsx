@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Advantages from "../Components/Advantages";
-import Footer from "../Components/Footer";
-import Allstyle from "../Components/allproducts.module.css";
+import Advantages from "../components/Advantages";
+import Footer from "../components/Footer";
+import Allstyle from "../components/allproducts.module.css";
 import ProductsData from "../assets/data/productsData";
 import { sortMenu, brandsMenu, categoryMenu } from "../assets/data/filterBarData";
 import { useDispatch } from "react-redux";

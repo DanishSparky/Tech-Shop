@@ -1,9 +1,9 @@
 import React  from "react";
-import Footer from "../Components/Footer"
+import Footer from "../components/Footer"
 import { useSelector } from "react-redux";
 import { increaseItems, removeItem, addToCart, removeFromCart } from "../Redux/CartSlice"
 import { useDispatch } from "react-redux";
-import Cstyle from "../Components/Cart.module.css"
+import Cstyle from "../components/Cart.module.css"
 import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 

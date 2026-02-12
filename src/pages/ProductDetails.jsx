@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import Footer from "../Components/Footer";
-import Advantages from "../Components/Advantages";
+import Footer from "../components/Footer";
+import Advantages from "../components/Advantages";
 import { useNavigate, useParams } from "react-router-dom";
 import productsData from "../assets/data/productsData";
-import Dstyle from "../Components/productDetails.module.css"
+import Dstyle from "../components/productDetails.module.css"
 import { FaStar } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import { useDispatch } from "react-redux";
